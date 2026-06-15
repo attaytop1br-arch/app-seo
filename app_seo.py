@@ -92,7 +92,7 @@ if st.button("Gerar Estratégia de Ranqueamento 🚀", use_container_width=True)
         with st.spinner("Analisando o algoritmo dos marketplaces..."):
             
             comando_para_ia = f"""
-            Atue como um especialista em e-commerce focado em conversão.
+            Atue como um especialista em copy para e-commerce focado em alta conversão.
             O meu produto é: {produto_usuario}
             
             Formate a resposta em HTML limpo (apenas tags <h3>, <ul>, <li>, <p>, <strong>), sem marcações de markdown (` ```html `).
@@ -104,8 +104,9 @@ if st.button("Gerar Estratégia de Ranqueamento 🚀", use_container_width=True)
             <h3>🏷️ Tags Ocultas (As mais pesquisadas)</h3>
             [Lista separada por vírgulas com as 15 melhores tags]
             
-            <h3>✍️ Descrição Magnética</h3>
-            [Pequeno parágrafo focado em quebrar objeções do cliente]
+            <h3>✍️ Descrição Magnética (Quebra de Objeções)</h3>
+            [Crie a descrição do produto estritamente em formato de TÓPICOS usando as tags <ul> e <li>. 
+            Em vez de apenas descrever, use cada tópico para antecipar e MATAR uma objeção comum do cliente ao comprar roupas online (exemplo de focos: não fica transparente, costura reforçada para não abrir, modelagem que valoriza sem apertar, tecido que não encolhe ou desbota na lavagem). Destaque a qualidade premium e passe extrema segurança para o comprador.]
             """
             
             # Chama a IA
